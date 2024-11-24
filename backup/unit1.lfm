@@ -1,0 +1,284 @@
+object Form1: TForm1
+  Left = 407
+  Height = 593
+  Top = 165
+  Width = 515
+  Caption = 'Calculadora'
+  ClientHeight = 593
+  ClientWidth = 515
+  Menu = MenuPrincipal
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object Bt_07: TButton
+    Left = 104
+    Height = 34
+    Top = 368
+    Width = 76
+    Caption = '7'
+    TabOrder = 0
+    OnClick = Bt_07Click
+  end
+  object Bt_08: TButton
+    Left = 192
+    Height = 34
+    Top = 368
+    Width = 76
+    Caption = '8'
+    TabOrder = 1
+    OnClick = Bt_08Click
+  end
+  object Bt_09: TButton
+    Left = 284
+    Height = 34
+    Top = 368
+    Width = 76
+    Caption = '9'
+    TabOrder = 2
+    OnClick = Bt_09Click
+  end
+  object Bt_04: TButton
+    Left = 104
+    Height = 34
+    Top = 423
+    Width = 76
+    Caption = '4'
+    TabOrder = 3
+    OnClick = Bt_04Click
+  end
+  object Bt_05: TButton
+    Left = 193
+    Height = 34
+    Top = 423
+    Width = 76
+    Caption = '5'
+    TabOrder = 4
+    OnClick = Bt_05Click
+  end
+  object Bt_06: TButton
+    Left = 284
+    Height = 34
+    Top = 423
+    Width = 76
+    Caption = '6'
+    TabOrder = 5
+    OnClick = Bt_06Click
+  end
+  object Bt_01: TButton
+    Left = 104
+    Height = 34
+    Top = 478
+    Width = 76
+    Caption = '1'
+    TabOrder = 6
+    OnClick = Bt_01Click
+  end
+  object Bt_02: TButton
+    Left = 194
+    Height = 34
+    Top = 478
+    Width = 76
+    Caption = '2'
+    TabOrder = 7
+    OnClick = Bt_02Click
+  end
+  object Bt_03: TButton
+    Left = 284
+    Height = 34
+    Top = 478
+    Width = 76
+    Caption = '3'
+    TabOrder = 8
+    OnClick = Bt_03Click
+  end
+  object Bt_00: TButton
+    Left = 104
+    Height = 34
+    Top = 528
+    Width = 76
+    Caption = '0'
+    TabOrder = 9
+    OnClick = Bt_00Click
+  end
+  object Button11: TButton
+    Left = 194
+    Height = 34
+    Top = 528
+    Width = 75
+    Caption = '+/-'
+    TabOrder = 10
+    OnClick = Button11Click
+  end
+  object ButtonVirgula: TButton
+    Left = 284
+    Height = 34
+    Top = 528
+    Width = 78
+    Caption = ','
+    TabOrder = 11
+    OnClick = ButtonVirgulaClick
+  end
+  object ButtonDiv: TButton
+    Left = 376
+    Height = 34
+    Top = 368
+    Width = 48
+    Caption = '/'
+    TabOrder = 12
+    OnClick = ButtonDivClick
+  end
+  object ButtonMult: TButton
+    Left = 376
+    Height = 34
+    Top = 423
+    Width = 48
+    Caption = 'X'
+    TabOrder = 13
+    OnClick = ButtonMultClick
+  end
+  object ButtonSub: TButton
+    Left = 376
+    Height = 34
+    Top = 478
+    Width = 48
+    Caption = '-'
+    TabOrder = 14
+    OnClick = ButtonSubClick
+  end
+  object ButtonSum: TButton
+    Left = 376
+    Height = 34
+    Top = 528
+    Width = 48
+    Caption = '+'
+    TabOrder = 15
+    OnClick = ButtonSumClick
+  end
+  object Button17: TButton
+    Left = 432
+    Height = 34
+    Top = 368
+    Width = 48
+    Caption = '<-'
+    TabOrder = 16
+    OnClick = Button17Click
+  end
+  object clearButton: TButton
+    Left = 432
+    Height = 34
+    Top = 423
+    Width = 48
+    Caption = 'CE'
+    TabOrder = 17
+    OnClick = clearButtonClick
+  end
+  object Button19: TButton
+    Left = 432
+    Height = 34
+    Top = 478
+    Width = 48
+    Caption = '%'
+    TabOrder = 18
+  end
+  object ButtonEqual: TButton
+    Left = 432
+    Height = 34
+    Top = 528
+    Width = 48
+    Caption = '='
+    TabOrder = 19
+    OnClick = ButtonEqualClick
+  end
+  object Button21: TButton
+    Left = 40
+    Height = 34
+    Top = 368
+    Width = 48
+    Caption = 'MC'
+    TabOrder = 20
+  end
+  object Button22: TButton
+    Left = 40
+    Height = 34
+    Top = 423
+    Width = 48
+    Caption = 'MR'
+    TabOrder = 21
+  end
+  object Button23: TButton
+    Left = 40
+    Height = 34
+    Top = 478
+    Width = 48
+    Caption = 'M-'
+    TabOrder = 22
+  end
+  object Button24: TButton
+    Left = 40
+    Height = 34
+    Top = 528
+    Width = 48
+    Caption = 'M+'
+    TabOrder = 23
+  end
+  object richText: TMemo
+    Left = 40
+    Height = 280
+    Top = 16
+    Width = 440
+    Color = clScrollBar
+    Font.Height = -20
+    Lines.Strings = (
+      'richText'
+    )
+    ParentFont = False
+    TabOrder = 24
+  end
+  object txtDisplay: TEdit
+    Left = 159
+    Height = 36
+    Top = 312
+    Width = 321
+    Alignment = taRightJustify
+    Font.Height = -20
+    ParentFont = False
+    TabOrder = 25
+    Text = '0'
+  end
+  object Edit2: TEdit
+    Left = 40
+    Height = 36
+    Top = 312
+    Width = 104
+    Font.Height = -20
+    ParentFont = False
+    TabOrder = 26
+    Text = '000'
+  end
+  object MenuPrincipal: TMainMenu
+    Tag = 2
+    Left = 8
+    Top = 8
+    object MenuItem1: TMenuItem
+      Caption = 'Menu'
+      OnClick = MenuItem1Click
+      object MenuItem5: TMenuItem
+        Caption = 'Exportar para .txt'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Exportar para pdf'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Sobre'
+      object MenuItem3: TMenuItem
+        Caption = 'licença'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Sobre o Software'
+        OnClick = MenuItem4Click
+      end
+    end
+  end
+end
